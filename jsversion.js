@@ -9,7 +9,7 @@ console.log(currentVersion);
 }();
 
 function loadScript(src) {
-    return new Promise(function (resolve, reject) {
+    return new Promise(function promise(resolve, reject) {
         var s;
         s = document.createElement('script');
         s.src = src;
@@ -49,7 +49,7 @@ function tryVersion(num,i){
 function tryFirstVersion(num) {
 	
 	
-    return new Promise(function (resolve, reject) {
+    return new Promise(function promise(resolve, reject) {
         var s;
 		
         s = document.createElement('script');
@@ -67,7 +67,7 @@ function tryFirstVersion(num) {
 function trySecondVersion(num) {
 	
 	
-    return new Promise(function (resolve, reject) {
+    return new Promise(function promise(resolve, reject) {
         var s;
 		
         s = document.createElement('script');
@@ -85,7 +85,7 @@ function trySecondVersion(num) {
 function tryThirdVersion(num) {
 	
 	
-    return new Promise(function (resolve, reject) {
+    return new Promise(function promise(resolve, reject) {
         var s;
 		
         s = document.createElement('script');
@@ -103,7 +103,7 @@ function tryThirdVersion(num) {
 function tryFourthVersion(num) {
 	
 	
-    return new Promise(function (resolve, reject) {
+    return new Promise(function promise(resolve, reject) {
         var s;
 		
         s = document.createElement('script');
